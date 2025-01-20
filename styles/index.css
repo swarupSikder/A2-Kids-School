@@ -750,17 +750,63 @@ footer .part-3 .image-layout {
         display: none;
     }
 
-    .section-2 .arrow-layout > div {
-        background-color: var(--color-1);
-        padding: 24px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    /* Section (3) */
+    .section-3 h1 {
+        font-size: 1.25rem;
+        margin-top: 50px;
     }
 
-    .section-2 .arrow-layout > div > img {
-        width: 30px;
-        color: white;
+    .section-3 .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-3 .container .left {
+        display: none;
+    }
+
+    .section-3 .container .right {
+        gap: 10px;
+    }
+
+    .section-3 .container .right .item {
+        border-radius: 5px;
+    }
+
+    .section-3 .container .right .item .image-layout img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .section-3 .container .right .item .text-layout {
+        margin-left: 8%;
+    }
+
+    .section-3 .container .right .item .text-layout button {
+        border-radius: 15px;
+        font-size: 0.6rem;
+        line-height: 10px;
+        padding: 6% 7%;
+        bottom: 20px;
+    }
+
+    .section-3 .container .right .item .text-layout h2 {
+        width: 95%;
+        font-size: 0.6rem;
+        line-height: 15px;
+        margin: -10px 0px 20px 0px;
+    }
+
+    .section-3 .view-all {
+        padding: 1% 6%;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+
+    .section-3 marquee {
+        font-size: 12px;
+    }
+
+    .section-3 marquee span {
+        font-size: 1.25rem;
     }
 }
