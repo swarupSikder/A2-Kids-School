@@ -747,9 +747,7 @@ footer .part-3 .image-layout {
     }
 
     .section-2 .arrow-layout {
-        display: flex;
-        gap: 10px;
-        margin: 5% 0% 2% 0;
+        display: none;
     }
 
     .section-2 .arrow-layout > div {
