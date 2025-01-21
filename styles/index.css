@@ -87,6 +87,13 @@ header nav .left span {
     line-height: 30px;
     letter-spacing: 0%;
     text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav .left span:hover {
+    cursor: pointer;
+    color: var(--color-1);
+    text-shadow: 1px 1px 3px #000000;
 }
 
 header nav .mid {
@@ -103,7 +110,16 @@ header nav .mid .item {
     line-height: 30px;
     letter-spacing: 0%;
     text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
+header nav .mid .item:hover {
+    cursor: pointer;
+    color: var(--color-5);
+    position: relative;
+    transform: scale(1.5);
+}
+
 
 header nav .right {
     width: 33%;
@@ -121,6 +137,13 @@ header nav .right button {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav .right button:hover {
+    cursor: pointer;
+    background-color: var(--color-5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header nav .right .menu {
@@ -204,10 +227,13 @@ main {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
-.section-1 .right {
-    
+.section-1 .left button:hover {
+    cursor: pointer;
+    background-color: var(--color-5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .section-1 .right img {
@@ -310,19 +336,39 @@ main {
     gap: 10px;
     margin: 5% 0% 2% 0;
 }
-
-.section-2 .arrow-layout > div {
+.circle {
+    width: 100px;
+    height: 100px;
     background-color: var(--color-1);
-    padding: 24px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    transition: all 0.4s ease-in-out;
 }
 
-.section-2 .arrow-layout > div > img {
-    width: 30px;
-    color: white;
+.left-arrow {
+    width: 18px;
+    height: 18px;
+    border: solid white;
+    border-radius: 4px;
+    border-width: 6px 6px 0 0; /*thickness*/
+    transform: rotate(-135deg);  /*line into an arrow*/
+}
+
+.right-arrow {
+    width: 18px;
+    height: 18px;
+    border: solid white;
+    border-radius: 4px;
+    border-width: 6px 6px 0 0; /*thickness*/
+    transform: rotate(45deg);  /*line into an arrow*/
+}
+
+.circle:hover {
+    cursor: pointer;
+    background-color: var(--color-5);
 }
 
 
