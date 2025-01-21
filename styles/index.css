@@ -329,6 +329,13 @@ main {
 
 .section-2 .item-layout .item h3 {
     margin-top: 5%;
+    transition: all 0.4s ease-in-out;
+}
+.section-2 .item-layout .item h3:hover {
+    cursor: pointer;
+    color: var(--color-5);
+    position: relative;
+    transform: scale(1.5);
 }
 
 .section-2 .arrow-layout {
@@ -521,6 +528,13 @@ main {
     font-weight: 600;
     line-height: 30px;
     margin: 5% 0%;
+    transition: all 0.4s ease-in-out;
+}
+
+.section-3 .view-all:hover {
+    cursor: pointer;
+    background-color: var(--color-5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .section-3 marquee {
@@ -621,6 +635,11 @@ footer .part-2 h1 {
     text-align: left;
 }
 
+footer .part-2 h1:hover {
+    cursor: pointer;
+    color: var(--color-1);
+}
+
 footer .part-2 span {
     color: rgb(255, 255, 255);
     font-size: 1.25rem;
@@ -628,6 +647,11 @@ footer .part-2 span {
     line-height: 25px;
     letter-spacing: 0%;
     text-align: left;
+}
+
+footer .part-2 span:hover {
+    cursor: pointer;
+    color: var(--color-1);
 }
 
 footer .part-3 {
@@ -680,6 +704,10 @@ footer .part-3 .image-layout {
     /*        */
     /* Header */
     /*        */
+    header nav {
+        padding: 0% 4%;
+    }
+
     header nav .left img {
         width: 40px;
     }
@@ -747,6 +775,7 @@ footer .part-3 .image-layout {
 
     /* Section (2) */
     .section-2 {
+        padding: 3% 4%;
         border-top: none;
         border-bottom: none;
     }
@@ -797,6 +826,10 @@ footer .part-3 .image-layout {
     }
 
     /* Section (3) */
+    .section-3 {
+        padding: 3% 4%;
+    }
+
     .section-3 h1 {
         font-size: 1.25rem;
         margin-top: 50px;
@@ -884,7 +917,7 @@ footer .part-3 .image-layout {
     }
 
     footer .part-2 > div {
-        gap: 12px;
+        gap: 6px;
     }
 
     footer .part-2 h1 {
@@ -897,6 +930,7 @@ footer .part-3 .image-layout {
 
     footer .part-3 {
         justify-content: flex-start;
+        margin: 20px 0;
     }
 
     footer .part-3 > div {
