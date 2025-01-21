@@ -955,7 +955,7 @@ footer .part-3 .image-layout img:hover {
 
 
 /* For md devices */
-@media screen and (min-width: 577px) and (max-width: 922px) {
+@media screen and (min-width: 577px) and (max-width: 1024px) {
     /*        */
     /* Header */
     /*        */
